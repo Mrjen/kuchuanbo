@@ -1,0 +1,255 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    width: 1200px;
+    margin:0 auto;
+}
+
+.font_style{
+    font-family:'HanWangYenThin-d29bcc6e95757';
+}
+
+body{
+    min-width: 1400px;
+    font-family: sans-serif;
+}
+
+/* 导航 */
+.web_nav{
+    width: 100%;
+    height: 100px;
+    background: #1b1c1c;
+    display: block;
+    color: #fff;
+}
+
+.main_nav{
+    width: 1200px;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.main_nav .logo{
+    display: block;
+    width: 100px;
+    height: 76px;
+    background: #666;
+    margin-right: 200px;
+}
+
+.main_nav ul{
+    display: flex;
+    flex: 1;
+}
+
+.main_nav ul li{
+    line-height: 144px;
+    color: #fff;
+    flex: 1;
+}
+
+.main_nav ul li a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+}
+
+.main_nav ul li a:hover{
+    background: #111;
+}
+
+/* 轮播 */
+.swiper{
+    width: 100%;
+    height: 650px;
+    background: #777;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper img{
+    width: 1980px;
+    height: 650px;
+    position: relative;
+    z-index: 1;
+}
+
+.text_floor{
+    height: 100%;
+    border:1px solid #f3f;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, .5);
+    padding-top: 200px;
+    padding-left: 80px;
+}
+
+.text_floor h1{
+    font-size: 50px;
+    font-weight: lighter;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom:20px;
+}
+
+.text_floor h3{
+    font-size: 24px;
+    font-weight: lighter;
+    color: #fff;
+    line-height: 40px;
+}
+
+.make_applet{
+    width: 200px;
+    height: 50px;
+    border-radius: 150px;
+    font-size: 20px;
+    color: #b1b7b0;
+    background:#272524;
+    display: inline-block; 
+    text-align: center;
+    line-height: 48px;
+    position: absolute;
+    right: 50px;
+    margin-top: 100px;
+}
+
+/* 页面 */
+.section{
+    overflow: hidden;
+    /*border:1px solid red;*/
+}
+
+.section h1{
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: lighter;
+}
+
+.section1 .section_main{
+    width: 1242px;
+    margin: 0 auto;
+    background: url(../img/section1_bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    display: flex;
+}
+
+
+.section1 .mobile_div img{
+    display: block;
+    width: 560px;
+    height: 990px;
+    margin:70px 40px 0 40px;
+}
+
+.section1 .section_main dl{
+    padding-top: 226px;
+}
+
+.section1 .section_main{
+    color: #fff;
+}
+
+.section1 .section_main dt{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.section1 .section_main dd{
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.section1 .section_main dt:nth-last-of-type(1),.section1 .section_main dt:nth-last-of-type(2){
+    color: #333;
+}
+
+.section1 .section_main dd:nth-last-of-type(1),.section1 .section_main dd:nth-last-of-type(2){
+    color: #333;
+}
+
+/*页面2*/
+.section2 .section_main nav{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 174px;
+}
+
+.section2 .section_main nav font{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #eff4f7;
+    margin:0 3px;
+}
+
+.section2 .section_main nav ul {
+    display: flex;
+}
+
+.section2 .section_main nav ul li{
+    width: 108px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #333;
+    background: #eff4f7;
+    margin:0 3px;
+}
+
+.section2 .section_main .show_box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section2 .section_main .show_box span,.section2 .section_main .show_box span img{
+    display: block;
+}
+
+.section2 .section_main .show_box .show_img1 img{
+    width: 586px;
+    height: 350px;
+    display: block;
+}
+
+
+.section2 .section_main .show_box .show_tip1{
+    width: 360px;
+    height: 350px;
+    background: #000;
+    color: #fff;
+    padding:0 20px;
+}
+
+.section2 .section_main .show_box .show_tip1 dl{
+    padding-top: 64px;
+}
+
+.section2 .section_main .show_box .show_tip1 dl dt{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.section2 .section_main .show_box .show_tip1 dl dd{
+    margin-bottom: 24px;
+    line-height: 20px;
+    font-size: 14px;
+}
