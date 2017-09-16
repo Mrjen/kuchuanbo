@@ -17,16 +17,17 @@
         <div class="main_nav">
             <span class="logo"><img src="img/logo.png" alt="酷传播"></span>
             <ul>
-                <li><a class="anchor-scroll" href="#section1" data-class-to="section1" data-scroll-end="bounce">产品功能</a></li>
-                <li><a class="anchor-scroll" href="#section2" data-class-to="section2" data-scroll-end="bounce">产品优势</a></li>
-                <li><a class="anchor-scroll" href="#section3" data-class-to="section3" data-scroll-end="bounce">行业方案</a></li>
-                <li><a class="anchor-scroll" href="#section4" data-class-to="section4" data-scroll-end="bounce">优秀案例</a></li>
-                <li><a class="anchor-scroll" href="#section5" data-class-to="section5" data-scroll-end="bounce">合作共盈</a></li>
+                <li><a class="anchor-scroll"  data-class="swiper">首页</a></li>
+                <li><a class="anchor-scroll"  data-class="section1">产品功能</a></li>
+                <li><a class="anchor-scroll"  data-class="section2">产品优势</a></li>
+                <li><a class="anchor-scroll"  data-class="section3">行业方案</a></li>
+                <li><a class="anchor-scroll"  data-class="section4">优秀案例</a></li>
+                <li><a class="anchor-scroll"  data-class="section5">合作共盈</a></li>
             </ul>
         </div>
     </nav>
     <!-- 轮播 -->
-    <div class="swiper">
+    <div class="swiper" id="swiper">
         <div class="text_floor container">
             <h1 class="company_name font_style">酷传播</h1>
             <h3 class="font_style">提供真正适合各行各业内的小程序</h3>
@@ -36,7 +37,7 @@
         <img src="img/banner1.png" alt="">
     </div>
     <!-- 页面列表 -->
-    <section class="section section1" id="#section1" data-on-scroll="section1">
+    <section class="section section1" id="section1" data-on-scroll="section1">
         <h1>产品功能</h1>
         <div class="section_main">
             <div class="mobile_div"><img src="img/section1_mobile.png" alt=""></div>
@@ -57,7 +58,7 @@
         </div>
     </section>
 
-    <section class="section section2"  id="#section2" data-on-scroll="section2" >
+    <section class="section section2"  id="section2" data-on-scroll="section2" >
         <div class="section2_in">
             <h1>产品优势</h1>
             <div class="section_main">
@@ -109,7 +110,7 @@
         </div>
     </section>
 
-    <section class="section section3"  id="#section3">
+    <section class="section section3"  id="section3" >
         <h1>行业方案</h1>
         <div class="section_main">
             <nav>
@@ -144,7 +145,7 @@
         </div>
     </section>
 
-    <section class="section section4"  id="#section4">
+    <section class="section section4"  id="section4">
         <h1>优秀案例</h1>
         <ul class="anli_list">
             <li>
@@ -210,7 +211,7 @@
         </ul>
     </section>
 
-    <section class="section section5"  id="#section5">
+    <section class="section section5"  id="section5">
         <h1>抓住小程序分口，很可能就是你未来的新机遇</h1>
         <div class="section_main">
             <p class="tip">酷传播作为全国第一批小程序开放平台</p>
@@ -223,11 +224,11 @@
                    <p>酷传播立志于让小程序变得真正触手可及，人人可用，从而更好的服务企业主，服务客户。</p>
                 </li>
                 <li>
-                     <a href="#" title="">功能介绍</a>
-                     <a href="#" title="">产品优势</a>
-                     <a href="#" title="">行业方案</a>
-                     <a href="#" title="">优秀案例</a>
-                     <a href="#" title="">合作共盈</a>
+                     <a href="#"  class="anchor-scroll" title="" data-class="section1">功能介绍</a>
+                     <a href="#"  class="anchor-scroll" title="" data-class="section2">产品优势</a>
+                     <a href="#"  class="anchor-scroll" title="" data-class="section3">行业方案</a>
+                     <a href="#"  class="anchor-scroll" title="" data-class="section4">优秀案例</a>
+                     <a href="#"  class="anchor-scroll" title="" data-class="section5">合作共盈</a>
                 </li>
                 <li class="contact">
                     <h3>联系详情</h3>
@@ -241,9 +242,7 @@
 
 <!-- js文件 -->
 
-<!-- <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
-<script type="text/javascript" src="js/githubrepo.js"></script>
-<script type="text/javascript" src="js/prettify.js"></script>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript">
     // 第三页手机切换
  $(".section_main ul li:nth-of-type(1) font").css('display','block');
@@ -285,15 +284,14 @@ $(".section4 .anli_list li")
         $(this).find("img").eq(0).fadeIn();
     });
 
-</script>
+$(".anchor-scroll").on('click',function(){
+    let _class = $(this).data("class");
+    console.log(_class);
+    var _scrollTop = $("#"+_class).offset().top;
+    $('html').animate({scrollTop:_scrollTop-100}, 500);
 
-<script type="text/javascript">
-$(function() {
-  //Calls the tocify method on your HTML div.
-  $("#toc").tocify();
-});
+})
 </script>
-
 </body>
 
 </html>
