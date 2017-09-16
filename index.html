@@ -15,13 +15,13 @@
     <!-- 顶部导航 -->
     <nav class="web_nav">
         <div class="main_nav">
-            <span class="logo"><img src="http://iph.href.lu/194x76?text=logo" alt="酷传播"></span>
+            <span class="logo"><img src="img/logo.png" alt="酷传播"></span>
             <ul>
-                <li><a href="#">产品功能</a></li>
-                <li><a href="#">产品优势</a></li>
-                <li><a href="#">行业方案</a></li>
-                <li><a href="#">优秀案例</a></li>
-                <li><a href="#">合作共盈</a></li>
+                <li><a class="anchor-scroll" href="#section1" data-class-to="section1" data-scroll-end="bounce">产品功能</a></li>
+                <li><a class="anchor-scroll" href="#section2" data-class-to="section2" data-scroll-end="bounce">产品优势</a></li>
+                <li><a class="anchor-scroll" href="#section3" data-class-to="section3" data-scroll-end="bounce">行业方案</a></li>
+                <li><a class="anchor-scroll" href="#section4" data-class-to="section4" data-scroll-end="bounce">优秀案例</a></li>
+                <li><a class="anchor-scroll" href="#section5" data-class-to="section5" data-scroll-end="bounce">合作共盈</a></li>
             </ul>
         </div>
     </nav>
@@ -36,7 +36,7 @@
         <img src="img/banner1.png" alt="">
     </div>
     <!-- 页面列表 -->
-    <section class="section section1">
+    <section class="section section1" id="#section1" data-on-scroll="section1">
         <h1>产品功能</h1>
         <div class="section_main">
             <div class="mobile_div"><img src="img/section1_mobile.png" alt=""></div>
@@ -57,52 +57,243 @@
         </div>
     </section>
 
-    <section class="section section2">
-        <h1>产品优势</h1>
-        <div class="section_main">
-            <nav>
-                <font></font>
-                <ul class="section_nav">
-                    <li>价格亲民</li>
-                    <li>技术服务</li>
-                    <li>营销方案</li>
-                    <li>零门槛</li>
-                    <li>团队强大</li>
-                    <li>流量共享</li>
-                </ul>
-                <font></font>
-            </nav>
-            <div class="show_box">
-                <span><img src="img/section2_img1.png" alt=""></span>
-                <span class="show_tip1">
-                    <dl>
-                        <dt>亲民价格</dt>
-                        <dd>限时免费为用户提供免费小程序 不收取任何费用</dd>
-                        <dt>技术服务</dt>
-                        <dd>7*24小时全天为用户提供技术服务</dd>
-                        <dt>营销方案</dt>
-                        <dd>7*多种营销方案免费提供给用户，促进内容裂变式传播持续拉新，高效率变现</dd>
-                    </dl>
-                </span>
-                <span><img src="img/section2_img2.png" alt=""></span>
-                <span><img src="img/section2_img3.png" alt=""></span>
-                <span><img src="img/section2_img4.png" alt=""></span>
-                <span><img src="img/section2_img5.png" alt=""></span>
-                <span><img src="img/section2_img6.png" alt=""></span>
-                <span></span>
+    <section class="section section2"  id="#section2" data-on-scroll="section2" >
+        <div class="section2_in">
+            <h1>产品优势</h1>
+            <div class="section_main">
+                <nav>
+                    <font></font>
+                    <ul class="section_nav">
+                        <li>价格亲民</li>
+                        <li>技术服务</li>
+                        <li>营销方案</li>
+                        <li>零门槛</li>
+                        <li>团队强大</li>
+                        <li>流量共享</li>
+                    </ul>
+                    <font></font>
+                </nav>
+                <div class="show_box">
+                    <div class="row">
+                        <span><img src="img/section2_img1.png" alt=""></span>
+                        <span class="show_tip show_tip1">
+                            <dl>
+                                <dt>亲民价格</dt>
+                                <dd>限时免费为用户提供免费小程序 不收取任何费用</dd>
+                                <dt>技术服务</dt>
+                                <dd>7*24小时全天为用户提供技术服务</dd>
+                                <dt>营销方案</dt>
+                                <dd>7*多种营销方案免费提供给用户，促进内容裂变式传播持续拉新，高效率变现</dd>
+                            </dl>
+                      </span>
+                        <span><img src="img/section2_img2.png" alt=""></span>
+                        <span><img src="img/section2_img3.png" alt=""></span>
+                    </div>
+                    <div class="row">
+                        <span><img src="img/section2_img4.png" alt=""></span>
+                        <span><img src="img/section2_img5.png" alt=""></span>
+                        <span class="show_tip show_tip2">
+                            <dl>
+                                <dt>零门槛</dt>
+                                <dd>一键生成小程序，无需代码、零门槛，操作简单</dd>
+                                <dt>团队强大</dt>
+                                <dd>专业的营销团队及技术团队，随时为用户提供各行业的小程序解决方案</dd>
+                                <dt>流量共享</dt>
+                                <dd>连接更多的线下服务与线上用户，打造一个超级流量池，流量共享，合作共赢</dd>
+                            </dl>
+                      </span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section section3">
+    <section class="section section3"  id="#section3">
         <h1>行业方案</h1>
+        <div class="section_main">
+            <nav>
+                <ul>
+                    <li>
+                      <span>电商类<br>小程序</span>
+                      <font>店铺展示<br>优惠促销<br>后台管理<br>电商系统<br>自定义模板<br>售后退款</font>
+                    </li>
+                    <li>
+                      <span>餐饮类<br>小程序</span>
+                      <font>网点展示<br>美食外卖<br>活动促销<br>在线点餐<br>后台管理<br>预约服务</font>
+                    </li>
+                    <li>
+                      <span>零售类<br>小程序</span>
+                      <font>网点展示<br>电商系统<br>后台管理<br>互动营销<br>支持配送<br>售后退款</font>
+                    </li>
+                    <li>
+                      <span>同城便民<br>小程序</span>
+                      <font>一键发布<br>本地服务<br>海量信息<br>吃喝住行<br>信息曝光<br>完全免费</font>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile_box">
+                <img class="mobile_bg" src="img/section3_mobile.png" alt="">
+                <div class="mobile_img_box">
+                     <img src="img/section3_mobile_img1.png" alt="">
+                     <img src="http://iph.href.lu/374x654?text=2" alt="">
+                     <img src="http://iph.href.lu/374x654?text=3" alt="">
+                     <img src="http://iph.href.lu/374x654?text=4" alt="">
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="section section4">
+
+    <section class="section section4"  id="#section4">
         <h1>优秀案例</h1>
+        <ul class="anli_list">
+            <li>
+               <div class="applet_box">
+                   <img src="img/case_logo1.jpg" alt="">
+                   <img src="img/case_code1.jpg" alt="">
+               </div>
+               <div class="applet_content">
+                  <h3>同城生活</h3>
+                  <p>简介：汇聚八方资源，服务百姓生活，吃喝住行、休闲、娱乐、购物于一体，打造最全面、便捷的信息发布交流平台</p>
+               </div>
+            </li>
+            <li>
+               <div class="applet_box">
+                   <img src="img/case_logo2.png" alt="">
+                   <img src="img/case_code2.jpg" alt="">
+               </div>
+               <div class="applet_content">
+                  <h3>同城优惠券</h3>
+                  <p>简介：主打优惠券产品，每天定时更新优惠产品，发送您的购物需求，我们将竭诚为您寻找最优惠的产品，只做你的购物小管家</p>
+               </div>
+            </li>
+            <li>
+               <div class="applet_box">
+                   <img src="img/case_logo3.png" alt="">
+                   <img src="img/case_code3.jpg" alt="">
+               </div>
+               <div class="applet_content">
+                  <h3>美食控</h3>
+                  <p>简介：主营披萨、牛排、焗饭、意面及各类精美小吃！与您分享更多惊喜！</p>
+               </div>
+            </li>
+            <li>
+               <div class="applet_box">
+                   <img src="img/case_logo4.png" alt="">
+                   <img src="img/case_code4.jpg" alt="">
+               </div>
+               <div class="applet_content">
+                  <h3>明星美食街</h3>
+                  <p>简介：唯有美食与爱不可辜负，所有吃货都在明星美食街哟</p>
+               </div>
+            </li>
+            <li>
+               <div class="applet_box">
+                   <img src="img/case_logo5.jpg" alt="">
+                   <img src="img/case_code5.jpg" alt="">
+               </div>
+               <div class="applet_content">
+                  <h3>默契大考验</h3>
+                  <p>简介：不怕神一样的对手，就怕猪一样的队友，检验智商和默契度的时候到了！不服来战！</p>
+               </div>
+            </li>
+            <li>
+               <div class="applet_box">
+                   <img src="img/case_logo6.jpg" alt="">
+                   <img src="img/case_code6.jpg" alt="">
+               </div>
+               <div class="applet_content">
+                  <h3>情定七夕</h3>
+                  <p>简介：【情定七夕】是应于七夕节针对单身汪、情侣、夫妻之间相互表达的一种方式，大大增加互相之间的感情，是成就更多美好爱情小工具</p>
+               </div>
+            </li>
+        </ul>
     </section>
-    <section class="section section5">
-        <h1>合作共盈</h1>
+
+    <section class="section section5"  id="#section5">
+        <h1>抓住小程序分口，很可能就是你未来的新机遇</h1>
+        <div class="section_main">
+            <p class="tip">酷传播作为全国第一批小程序开放平台</p>
+            <p class="tip">诚邀各位共同发掘小程序千亿蓝海市场</p>
+            <a class="apply_applet" href="#" title="">免费申请</a>
+            <ul class="company_info">
+                <li> 
+                   <h3>关于我们</h3>
+                   <p>酷传播小程序隶属于超能者旗下第三方平台，是一款基于云端的小程序快速制作工具。</p>
+                   <p>酷传播立志于让小程序变得真正触手可及，人人可用，从而更好的服务企业主，服务客户。</p>
+                </li>
+                <li>
+                     <a href="#" title="">功能介绍</a>
+                     <a href="#" title="">产品优势</a>
+                     <a href="#" title="">行业方案</a>
+                     <a href="#" title="">优秀案例</a>
+                     <a href="#" title="">合作共盈</a>
+                </li>
+                <li class="contact">
+                    <h3>联系详情</h3>
+                    <div class="email"><img src="img/section5_email.png" alt="">15271920202@163.com</div>
+                    <div class="address"><img src="img/section5_address.png" alt="">深圳市龙岗区大运软件小镇45栋一楼</div>
+                </li>
+            </ul>
+        </div>
     </section>
+
+
+<!-- js文件 -->
+
+<!-- <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+<script type="text/javascript" src="js/githubrepo.js"></script>
+<script type="text/javascript" src="js/prettify.js"></script>
+<script type="text/javascript">
+    // 第三页手机切换
+ $(".section_main ul li:nth-of-type(1) font").css('display','block');
+ $(".section3 .section_main ul li")
+       .on('mouseenter', 'span', function(event) {
+           // event.preventDefault();
+           var $clicked =  $("span");
+           var _index = $(this).parent("li").index();
+           $(this).css("background",'#333');
+           $(".section3 .section_main ul li").find('font').css('display','none');
+           $(".section3 .section_main ul li").eq(_index).find('font').css('display','block');
+           $(".section3 .section_main .mobile_box .mobile_img_box img").fadeOut();
+           $(".section3 .section_main .mobile_box .mobile_img_box img").eq(_index).fadeIn();
+       })
+       .on('mouseleave', 'span', function(event) {
+           // event.preventDefault();
+           console.log(111)
+           var _index = $(this).parent("li").index();
+           $(".section3 .section_main ul li span").css("background",'#4c4d4c');
+           $(".section3 .section_main ul li").find('font').css('display','none');
+           
+       })
+       .on('mouseout', 'span', function(event) {
+           event.preventDefault();
+           var _index = $(this).parent("li").index();
+           $(".section3 .section_main ul li").eq(_index).find('font').css('display','block');
+       });
+
+
+// 第四页logo和二维码切换
+$(".section4 .anli_list li")
+    .on('mouseover','.applet_box',function(event){
+         $(this).find("img").eq(0).fadeOut();
+         $(this).find("img").eq(1).fadeIn();
+    })
+    .on('mouseleave', '.applet_box', function(event) {
+        event.preventDefault();
+        $(this).find("img").eq(1).fadeOut();
+        $(this).find("img").eq(0).fadeIn();
+    });
+
+</script>
+
+<script type="text/javascript">
+$(function() {
+  //Calls the tocify method on your HTML div.
+  $("#toc").tocify();
+});
+</script>
+
 </body>
 
 </html>
