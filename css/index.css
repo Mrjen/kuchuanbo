@@ -42,6 +42,21 @@ body{
     height: 100%;
 }
 
+.main_nav ul li a{
+    position: relative;
+}
+
+.main_nav ul li a:before{
+     content: "";
+     display: block;
+     width: 100%;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     border-bottom: 1px solid red;
+     display: none;
+}
+
 .main_nav .logo{
     display: flex;
     width: 120px;
@@ -139,6 +154,12 @@ body{
     margin-top: 100px;
 }
 
+.make_applet:hover{
+    background: #000;
+    color: #fff;
+    /*transition: 0.05s;*/
+}
+
 /* 页面 */
 .section{
     overflow: hidden;
@@ -150,6 +171,11 @@ body{
     text-align: center;
     line-height: 100px;
     font-weight: lighter;
+}
+
+.section1 h1{
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .section1 .section_main{
@@ -201,13 +227,13 @@ body{
 .section2 .section_main nav{
    display: flex;
    justify-content: center;
-   margin-bottom: 174px;
+   margin-bottom: 100px;
 }
 
 .section2_in{
-    width: 1920rpx;
     overflow: hidden;
     margin:0 auto;
+    padding-top: 100px;
 }
 
 .section2 .section_main nav font{
@@ -420,7 +446,7 @@ body{
     background-size: 100% auto;
     background-repeat: no-repeat;
     margin-top: -100px;
-    padding-top: 220px;
+    padding-top: 140px;
     overflow: hidden;
 }
 
@@ -448,6 +474,7 @@ body{
     flex-shrink: 0;
     margin-right: 26px;
     cursor: pointer;
+    background: #fff;
 }
 
 .section4 .anli_list li .applet_box img{
@@ -479,18 +506,21 @@ body{
 .section5 h1{
     font-weight: lighter;
     color: #1f201f;
-    margin: 128px 0;
     width: 100%;
     overflow:hidden;
+    margin-bottom: 30px;
 }
 
 .section5 .section_main{
-    width: 1920;
     margin:0 auto;
     height: 810px;
     background: url(../img/section5_bg.png);
     background-size: 100% 100%;
-    padding-top: 132px;
+    padding-top: 98px;
+}
+
+.section5 .section_main h1{
+    color: #fff;
 }
 
 .section5 .section_main .tip{
@@ -574,7 +604,7 @@ body{
 }
 
 .section5 .section_main .company_info li:nth-of-type(3).contact h3{
-    margin-bottom: 50px;
+    margin-bottom: 24px;
 }
 
 .section5 .section_main .company_info li:nth-of-type(3).contact .address{
@@ -594,3 +624,22 @@ body{
     height: 25px;
     margin-right: 20px;
 }
+
+.section5 .section_main .company_info li:nth-of-type(3).contact .phone{
+    display: flex;
+    align-items: center;
+    padding:10px 0;
+}
+
+
+.section5 .section_main .company_info li:nth-of-type(3).contact .phone img{
+    width: 25px;
+    display: block;
+    margin-right: 20px;
+}
+
+.section5 .section_main .company_info li:nth-of-type(3).contact a{
+    text-decoration: none;
+    color: #fff;
+}
+
